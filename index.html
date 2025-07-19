@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dulce Nahi</title>
+</head>
+
+<body>
+	<!-- Encabezado -->
+	<header>
+		<!-- Logo -->
+		<img src="#">
+		<!-- Navegacion -->
+		<nav>
+			<ul>
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#productos">Productos</a></li>
+				<li><a href="#pedido">Pedido</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+		</nav>
+
+
+	</header>
+	<!-- Contenido principal -->
+	<main>
+		<!-- Seccion de bienvenida-->
+		<section id="inicio">
+			<h1>Bienvenidos a Dulce Nahi</h1>
+			<p>Panaderia y reposteria casera con amor.</p>
+			<p>Disfruta de nuestras delicias recien horneadas todos los dias.</p>
+			<figure>
+				<img src="#" alt="Imagen Principal" width="300">
+				<figcaption>Nuestras tortas y panes recien horneados</figcaption>
+			</figure>
+		</section>
+
+		<!-- Seccion de productos -->
+		 <section id="productos">
+			<h2>Productos</h2>
+
+			<article>
+				<h3>Torta de chocolate</h3>
+				<figure>
+					<img src="#" alt="Torta de chocolate" width="200">
+					<figcaption>$2500</figcaption>
+				</figure>
+			</article>
+
+			<article>
+				<h3>Budin de naranja</h3>
+				<figure>
+					<img src="#" alt="budin de naranja" width="200">
+					<figcaption>$1200</figcaption>
+				</figure>
+			</article>
+
+			<!-- Mas articulos interesantes -->
+			<div>Mas articulos pronto...</div>
+		 </section>
+
+		 <!-- Seccion de pedidos -->
+		  <section id="pedido">
+				<h2>Hacer un pedido</h2>
+				<form method="POST" action="/pedido">
+					<fieldset>
+						<legend>Datos del cliente</legend>
+						<label for="nombre">Nombre:</label>
+						<input type="text" id="nombre" name="nombre" required><br><br>
+
+						<label for="direccion">Direccion:</label>
+						<input type="text" id="direccion" name="direccion" required><br><br>
+					</fieldset>
+
+					<fieldset>
+						<legend>Detalles del pedido</legend>
+						<label for="producto">Producto:</label><br>
+						<select name="producto" id="producto">
+							<option value="torta">Torta de chocolate</option>
+							<option value="budin">Budin de naranja</option>
+						</select><br><br>
+
+						<label for="envio">¿Necesita envio?</label>
+						<select id="envio" name="envio">
+							<option value="si">Si(+500)</option>
+							<option value="no">No</option>
+						</select><br><br>
+					</fieldset>
+
+					<button type="submit">Enviar pedido</button>
+				</form>
+		  </section>
+
+		  <!-- Seccion de contacto -->
+		  <section id="contacto">
+		  		<h2>Contacto</h2>
+		  		<p>¿Tenes dudas? hace tu pedido por Whatsapp!!!</p>
+		  		<p>
+		  			<a href="#" target="_blank">Whatsapp</a>
+		  		</p>
+		  </section>
+	</main>
+
+	<!-- Pie de pagina -->
+	<footer>
+		<p>&copy; 2025 Dulce Nahi. Todos los derechos reservados.</p>
+	</footer>
+</body>
+
+</html>
